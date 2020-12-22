@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="login">
+      <div class="form">
+        <form class="reg-form" action="index.html" method="post" name="form" onsubmit="return validateForm()">
+          <input type="text" name="Email" value="" placeholder="Email">
+          <input type="text" name="password" value="" placeholder="password">
+          <input type="text" name="" value="" placeholder="Comf-password">
+          <input type="text" name="Address" value="" placeholder="Address">
+          <input type="number" name="PhoneNumber" value="" placeholder="PhoneNumber">
+          <button type="button" name="button">SUBMIT</button>
+          <p class="message">if u have an account <a href="#">LOGIN</a></p>
+          </form>
+
+          <form class="log-form" action="index.html" method="post" name="form" onsubmit="return validateForm()">
+            <input type="text" name="username" value="" placeholder="user name">
+            <input type="text" name="password" value="" placeholder="password">
+            <button type="button" name="button">LOGIN</button>
+            <p class="message">no acc pls reg here <a href="#">REGISTER</a><br>
+            return to <a href="homepage.html">HOMEPAGE</p>
+
+          </form>
+      </div>
+    </div>
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'>
+</script>
+
+<script>
+  $('.message a').click(function(){
+    $('form').animate({height:"toggle", opacity: "toggle"}, "slow");
+    });
+</script>
+  </body>
+</html>
